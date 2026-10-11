@@ -1,3 +1,6 @@
+#연습문제1
 A = input()
 for i in range(0, len(A), 2):
     print(A[i], end=" ")
+
+#자가진단1-1
