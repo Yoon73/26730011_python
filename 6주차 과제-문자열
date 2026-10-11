@@ -1,0 +1,50 @@
+#연습문제1
+A = input()
+for i in range(0, len(A), 2):
+    print(A[i], end=" ")
+
+#자가진단1-1
+text= input()
+print(" ".join(text[::2]))
+
+#자가진단1-2
+text = input()
+print(text[::-1])
+
+#연습문제2
+print("It's an apple.")
+print('He said "Hello!" to me')
+
+#자가진단2
+name= '"Hong Gildong"'
+age= "I'm 15 years old"
+print("My name is", name)
+print(age)
+
+#연습문제3
+A= "apple orange banana"
+print(" ".join(A.split()[::-1]))
+B= "  Hello world!  "
+print(B)
+print(B.strip())
+
+#자가진단3
+s= input()
+word = s.split()
+print(word[1], word[0]+word[1])
+
+#연습문제4
+name= input()
+age= input()
+print(name, "is", age, "years old.")
+
+#자가진단4
+brother = input().split()
+sister = input().split()
+print(brother[0] + "'s age -" + sister[0] + "'s age=", int(brother[1]) - int(sister[1]))
+
+#연습문제5
+
+
+
+
