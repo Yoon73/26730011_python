@@ -44,7 +44,34 @@ sister = input().split()
 print(brother[0] + "'s age -" + sister[0] + "'s age=", int(brother[1]) - int(sister[1]))
 
 #연습문제5
+pi = 3.14
+r = int(input())
+area = r * r * pi
+print("PI =", pi)
+print("Area =", r, "*", r, "*", pi, "=", round(area, 1))
 
+#자가진단5
+N = int(input())
+weight = N / 3
+print(round(weight, 2))
+
+#연습문제6
+print("ITEM PRICE")
+print("shoe    75")
+print(" bag   230")
+
+#자가진단6
+print("%10s %10s %10s %10s" % ("item", "count", "price", "rate"))
+print("%10s %10d %10d %10.1f" % ("pen", 20, 100, 50.5))
+print("%10s %10d %10d %10.1f" % ("note", 5, 95, 35.3))
+print("%10s %10d %10d %10.1f" % ("eraser", 110, 97, 14.2))
+
+#연습문제7
+h = int(input())
+m = int(input())
+print("%02d:%02d" % (h, m))
+
+#자가진단7
 
 
 
