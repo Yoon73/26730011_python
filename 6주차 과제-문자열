@@ -72,6 +72,84 @@ m = int(input())
 print("%02d:%02d" % (h, m))
 
 #자가진단7
+h, m = map(int, input().split())
+if h >= 12:
+    ap = "PM"
+else:
+    ap = "AM"
+h = h % 12
+if h == 0:
+    h = 12
+print("%02d : %02d %s" % (h, m, ap))
 
+#연습문제8
+s = input()
+for i in range(len(s)):
+    if i > 0:
+        print(",", end="")
+    print(s[i], end="")
 
+#자가진단8-1
+a = input()
+b = input()
+c = input()
+print(a + "-" + b + "-" + c)
 
+#자가진단8-2
+y, m, d = input().split()
+print(y + "/" + m + "/" + d)
+
+#연습문제9
+A, B = input().split()
+if B in A * 3:
+    print(A * 3)
+else:
+    print(B * 2)
+
+#자가진단9
+password = input()
+pattern = input()
+if password in pattern * 5:
+    print("YES")
+else:
+    print("NO")
+
+#형성평가1
+s = input("문자열을 입력하시오: ")
+for i in range(len(s)):
+    if i == len(s) - 1:
+        print(s[i], end="")
+    else:
+        print(s[i], end="-")
+
+#형성평가2
+name = input("학생의 이름을 입력하시오: ")
+print(name + "'s score 'perfect'")
+
+#형성평가3
+bottom = float(input())
+height = float(input())
+area = bottom * height / 2
+print(round(area, 1))
+
+#형성평가4
+print("%10s %10s" % ("name", "subject"))
+print("%10s %10s" % ("minsoo", "math"))
+print("%10s %10s" % ("chulsoo", "science"))
+
+#형성평가5
+name, height, weight = input().split()
+print("NAME: %s" % name)
+print("HEIGHT: %scm" % height)
+print("WEIGHT: %.2fkg" % float(weight))
+
+#형성평가6
+s = input()
+print(".".join(s))
+
+#형성평가7
+s = input()
+for i in range(len(s) - 1, -1, -1):
+    print(s[i], end="")
+print()
+print(s)
