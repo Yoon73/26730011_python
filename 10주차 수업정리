@@ -1,0 +1,24 @@
+#슬라이싱
+student = "26730011윤채현소프트웨어융합과"
+sutdent_id = student[0:8]
+name = student[8:11]
+major = student[11:]
+
+print("학번:", sutdent_id)
+print("이름:", name)
+print("학과:", major)
+
+#lower
+response = input('게임을 계속 하시겠어요?')
+if response.lower()=='yes'or'y':
+    print('게임을 계속 합니다.')
+else:
+    print('다음에 또 봬요.')
+
+#문자요소로 나누기(공백O)
+string = "welcome to python"
+string = list(string)
+
+#문자요소로 나누기(공백X)
+string1 = "welcome to python"
+string1 = list(string1 .replace(" ",""))
