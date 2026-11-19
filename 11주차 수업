@@ -1,0 +1,29 @@
+# 문자열 -> 정수 + 타입
+a="33"
+a=int(a)
+print(a+1, type(a))
+
+# 정수 -> 문자열 + 타입
+a= 33
+result=str(a)
+print(result, type(result))
+
+#문자열 슬라이싱
+licens = "24가 2210"
+print(licens[4:])
+
+w="python"
+print(w[::-1]) #[시작:끝:간격]
+
+#문자열 다루기
+url="http://sharebook.kr"
+url= url.split(".") #split(" ") -> 공백 기준으로 나눔
+print(url[1])
+
+# %formatting
+name1 = "김민수" 
+age1 = 10
+name2 = "이철희"
+age2 = 13
+print("이름: %s 나이: %d" % (name1, age1)) #%s -> 문자열데이터, %d -> 정수형데이터
+print("이름: %s 나이: %d" % (name2, age2))
